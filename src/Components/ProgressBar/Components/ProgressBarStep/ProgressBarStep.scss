@@ -1,0 +1,82 @@
+// .progress-bar-step-container {
+//   position: relative;
+//   color: var(--graySecondary);
+//   .progress-bar-step__circle {
+//     position: relative;
+//     width: 36px;
+//     height: 36px;
+//     border: 2px solid var(--graySecondary);
+//     background-color: #f8f8f8;
+//     z-index: 11;
+//     border-radius: 50px;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     transition: calc(var(--progressBarAnimation) / 2);
+//     .circle-number {
+//       position: relative;
+//       font-size: 13px;
+//       font-weight: bold;
+//       color: inherit;
+//     }
+//   }
+
+//   .progress-bar-step__label {
+//     color: inherit;
+//     position: absolute;
+//     font-size: 12px;
+//     width: 88px;
+//     left: 50%;
+//     line-height: 1rem;
+//     font-weight: bold;
+
+//     transform: translateX(-50%);
+//     margin-top: 10px;
+//   }
+//   &.is-active {
+//     color: var(--primary);
+//     .progress-bar-step__circle {
+//       transition-delay: var(--progressBarAnimationOffset);
+//       border-color: var(--primary);
+//       color: var(--primary);
+//     }
+//     .progress-bar-step__label {
+//       transition-delay: var(--progressBarAnimationOffset);
+//       color: var(--primary);
+//     }
+//     svg {
+//       fill: var(--primary);
+//     }
+//   }
+//   &.is-completed {
+//     .progress-bar-step__circle {
+//       background-color: var(--primary);
+//       border-color: var(--primary);
+//       color: #ffffff;
+//       .icon-wrapper svg {
+//         fill: #ffffff;
+//       }
+//     }
+//     .progress-bar-step__label {
+//       color: var(--primary);
+//     }
+//   }
+// }
+
+// @media only screen and (max-width: 600px) {
+//   .progress-bar-step-container {
+//     .progress-bar-step__circle {
+//       width: 36px;
+//       height: 36px;
+//       .icon-wrapper {
+//         svg {
+//           height: 16px;
+//         }
+//       }
+//     }
+//     .progress-bar-step__label {
+//       font-size: 9px;
+//       width: 67px;
+//     }
+//   }
+// }

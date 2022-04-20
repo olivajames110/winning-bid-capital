@@ -1,0 +1,96 @@
+.modal {
+  position: fixed;
+  z-index: 100;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 96%;
+  max-width: 450px;
+  z-index: 1111111111;
+}
+
+.modal .modal__header {
+  top: 0;
+  left: 0;
+  width: 100%;
+  position: absolute;
+}
+
+.modal .modal__header .cancel {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 45px;
+  height: 45px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: transparent;
+  z-index: 111;
+}
+
+.modal .modal__header .cancel svg {
+  cursor: pointer;
+  height: 28px;
+  color: inherit;
+  fill: inherit;
+}
+
+.modal .modal__content {
+  text-align: center;
+}
+
+.modal .modal__content h2 {
+  font-size: 28px;
+  line-height: 36px;
+}
+
+.modal .modal__content h2,
+.modal .modal__content h3 {
+  color: #333;
+  text-shadow: none;
+}
+
+.modal .modal__content p {
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.fade-in-enter {
+  opacity: 0;
+}
+
+.fade-in-enter-active {
+  opacity: 1;
+  -webkit-transition: opacity 300ms, -webkit-transform 300ms;
+  transition: opacity 300ms, -webkit-transform 300ms;
+  transition: opacity 300ms, transform 300ms;
+  transition: opacity 300ms, transform 300ms, -webkit-transform 300ms;
+}
+
+.fade-in-exit {
+  opacity: 1;
+}
+
+.fade-in-exit-active {
+  opacity: 0;
+  -webkit-transition: opacity 300ms, -webkit-transform 300ms;
+  transition: opacity 300ms, -webkit-transform 300ms;
+  transition: opacity 300ms, transform 300ms;
+  transition: opacity 300ms, transform 300ms, -webkit-transform 300ms;
+}
+
+@media only screen and (max-width: 965px) {
+  .modal .modal__header {
+    padding: 0.7em;
+  }
+  .modal #preview__title {
+    font-size: 16px !important;
+    margin-bottom: 5px;
+  }
+  .modal #preview__address {
+    font-size: 13px !important;
+  }
+}
+/*# sourceMappingURL=Modal.css.map */

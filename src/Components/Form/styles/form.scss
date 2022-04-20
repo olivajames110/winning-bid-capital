@@ -1,0 +1,9 @@
+.form-outer-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 720px;
+  .form-screen-card-inner-wrapper {
+    max-width: 620px;
+    margin: 0 auto;
+  }
+}

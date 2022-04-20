@@ -1,0 +1,92 @@
+.card-slide-left {
+  position: absolute;
+  -webkit-transition: -webkit-transform 400ms;
+  transition: -webkit-transform 400ms;
+  transition: transform 400ms;
+  transition: transform 400ms, -webkit-transform 400ms;
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+}
+
+.card-slide-left-enter {
+  position: absolute;
+  -webkit-transform: translateX(200%);
+          transform: translateX(200%);
+  width: 100%;
+  -webkit-transition: -webkit-transform 400ms;
+  transition: -webkit-transform 400ms;
+  transition: transform 400ms;
+  transition: transform 400ms, -webkit-transform 400ms;
+}
+
+.card-slide-left-enter-active {
+  position: absolute;
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+  width: 100%;
+  -webkit-transition: -webkit-transform 400ms;
+  transition: -webkit-transform 400ms;
+  transition: transform 400ms;
+  transition: transform 400ms, -webkit-transform 400ms;
+}
+
+.card-slide-left-exit {
+  position: absolute;
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+  width: 100%;
+}
+
+.card-slide-left-exit-active {
+  position: absolute;
+  -webkit-transform: translateX(-200%);
+          transform: translateX(-200%);
+  width: 100%;
+  -webkit-transition: -webkit-transform 400ms;
+  transition: -webkit-transform 400ms;
+  transition: transform 400ms;
+  transition: transform 400ms, -webkit-transform 400ms;
+}
+
+.card-slide-right-enter {
+  position: absolute;
+  -webkit-transform: translateX(-200%);
+          transform: translateX(-200%);
+  -webkit-transition: -webkit-transform 400ms;
+  transition: -webkit-transform 400ms;
+  transition: transform 400ms;
+  transition: transform 400ms, -webkit-transform 400ms;
+}
+
+.card-slide-right-enter-active {
+  position: absolute;
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+  -webkit-transition: -webkit-transform 400ms;
+  transition: -webkit-transform 400ms;
+  transition: transform 400ms;
+  transition: transform 400ms, -webkit-transform 400ms;
+}
+
+.card-slide-right-exit {
+  position: absolute;
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+  width: 100%;
+  -webkit-transition: -webkit-transform 400ms;
+  transition: -webkit-transform 400ms;
+  transition: transform 400ms;
+  transition: transform 400ms, -webkit-transform 400ms;
+}
+
+.card-slide-right-exit-active {
+  position: absolute;
+  -webkit-transition: -webkit-transform 400ms;
+  transition: -webkit-transform 400ms;
+  transition: transform 400ms;
+  transition: transform 400ms, -webkit-transform 400ms;
+  -webkit-transform: translateX(200%);
+          transform: translateX(200%);
+  width: 100%;
+}
+/*# sourceMappingURL=leftRight.css.map */

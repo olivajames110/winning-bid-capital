@@ -1,0 +1,44 @@
+.signature-agreement-container {
+  position: relative;
+
+  .signature-container {
+    border: 1px solid rgb(221, 221, 221);
+    display: flex;
+    align-items: flex-end;
+    padding: 18px;
+    .signature-name-wrapper {
+      position: relative;
+      border-bottom: 1px solid rgb(162, 158, 158);
+      width: 100%;
+      // max-width: 330px;
+      margin: 0 auto;
+      .signature__cross {
+        position: absolute;
+        left: 0;
+        bottom: 10px;
+        svg {
+          display: block;
+          height: 18px;
+        }
+      }
+      .signature__name {
+        font-size: 36px;
+        line-height: 42px;
+        text-align: center;
+        font-family: var(--script);
+        padding: 0px 20px;
+      }
+      .signature__edit {
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .signature-agreement-container
+    .signature-container
+    .signature-name-wrapper
+    .signature__name {
+    font-size: 28px !important;
+  }
+}

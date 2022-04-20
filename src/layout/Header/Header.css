@@ -1,0 +1,79 @@
+header {
+  position: relative;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 25px;
+}
+
+header.active svg {
+  height: 88px !important;
+}
+
+header .header-inner-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .logo-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+}
+
+header .logo-wrapper svg,
+header .logo-wrapper img {
+  display: inline-block;
+  height: 64px;
+  -webkit-transition: 460ms;
+  transition: 460ms;
+}
+
+header .name-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 10px;
+  color: #4f5152;
+}
+
+header .name-wrapper h1 {
+  font-size: 22px;
+  line-height: 2rem;
+  font-weight: bold;
+}
+
+header .name-wrapper div {
+  font-size: 20px;
+  line-height: 1.2rem;
+  font-family: var(--jost);
+  margin-top: 3px;
+  font-weight: 500;
+}
+
+@media only screen and (max-width: 600px) {
+  header .logo-wrapper svg {
+    display: inline-block;
+    height: 36px !important;
+  }
+}
+/*# sourceMappingURL=Header.css.map */

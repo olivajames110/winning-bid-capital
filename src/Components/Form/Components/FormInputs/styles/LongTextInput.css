@@ -1,0 +1,23 @@
+#long-text .char-count-container {
+  position: relative;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+  font-size: 0.8rem;
+}
+
+#long-text .char-count-container.valid {
+  color: green;
+}
+
+#long-text textarea {
+  width: 100%;
+  padding: 8.5px 14px;
+  min-height: 80px;
+  font-size: 0.8rem;
+  border-radius: 4px;
+  resize: none;
+  border: 1px solid rgba(0, 0, 0, 0.23);
+  background-color: #ffffff;
+  z-index: 111111;
+}
+/*# sourceMappingURL=LongTextInput.css.map */

@@ -1,0 +1,59 @@
+.form-screen-footer-outer-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 10px;
+}
+
+.form-screen-footer-outer-wrapper .form-footer-button-outer-wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.form-screen-footer-outer-wrapper .form-footer-button-outer-wrapper .form-screen-footer-button {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.form-screen-footer-outer-wrapper .form-footer-button-outer-wrapper .form-screen-footer-button .icon-wrapper {
+  display: block;
+}
+
+.form-screen-footer-outer-wrapper .form-footer-button-outer-wrapper .form-screen-footer-button .icon-wrapper svg {
+  display: block;
+  fill: #fff;
+}
+
+.form-screen-footer-outer-wrapper .form-footer-button-outer-wrapper .form-screen-footer-button#back {
+  position: relative;
+}
+
+.form-screen-footer-outer-wrapper .form-footer-button-outer-wrapper .form-screen-footer-button#next {
+  color: #fff;
+  background-color: var(--primary);
+  position: relative;
+  width: 180px;
+  height: 42px;
+  border-radius: 50px;
+}
+
+.form-screen-footer-outer-wrapper .form-footer-button-outer-wrapper .form-screen-footer-button#next:hover {
+  background-color: var(--primaryHover);
+}
+/*# sourceMappingURL=FormScreenFooter.css.map */

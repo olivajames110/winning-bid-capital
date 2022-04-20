@@ -1,0 +1,32 @@
+.form-input-outer-wrapper {
+  padding: 12px 0 0px;
+  // padding: 12px 0 5px;
+  // padding: 8px 0 5px;
+  width: 100%;
+  input,
+  select,
+  textarea,
+  .MuiSelect-select {
+    font-size: 0.8rem;
+  }
+  .MuiInputLabel-root {
+    font-size: 0.8rem;
+    opacity: 0.65;
+  }
+  .MuiFormHelperText-root {
+    font-size: 0.67rem;
+  }
+  .helper-text {
+    color: rgba(0, 0, 0, 0.6);
+    font-weight: 400;
+    font-size: 0.75rem;
+    line-height: 1.66;
+    letter-spacing: 0.03333em;
+    text-align: left;
+    margin: 4px 14px 0px;
+  }
+}
+.MuiRadio-root {
+  z-index: 1111111;
+  padding: 5px !important;
+}

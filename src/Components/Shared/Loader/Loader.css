@@ -1,0 +1,48 @@
+.loader-wrapper {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  z-index: 111;
+}
+
+.loader-wrapper::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #00000061;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+}
+
+.loader-wrapper svg {
+  z-index: 1111;
+}
+
+.loader-wrapper .loader-text {
+  color: #fff;
+  z-index: 111;
+  margin-bottom: 45px;
+  font-size: 20px;
+  font-weight: bold;
+  text-shadow: 1px 1px 8px #000000ad;
+}
+/*# sourceMappingURL=Loader.css.map */

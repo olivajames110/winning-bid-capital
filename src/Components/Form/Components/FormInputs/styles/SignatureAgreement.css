@@ -1,0 +1,50 @@
+.signature-agreement-container {
+  position: relative;
+}
+
+.signature-agreement-container .signature-container {
+  border: 1px solid #dddddd;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding: 18px;
+}
+
+.signature-agreement-container .signature-container .signature-name-wrapper {
+  position: relative;
+  border-bottom: 1px solid #a29e9e;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.signature-agreement-container .signature-container .signature-name-wrapper .signature__cross {
+  position: absolute;
+  left: 0;
+  bottom: 10px;
+}
+
+.signature-agreement-container .signature-container .signature-name-wrapper .signature__cross svg {
+  display: block;
+  height: 18px;
+}
+
+.signature-agreement-container .signature-container .signature-name-wrapper .signature__name {
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  font-family: var(--script);
+  padding: 0px 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  .signature-agreement-container
+.signature-container
+.signature-name-wrapper
+.signature__name {
+    font-size: 28px !important;
+  }
+}
+/*# sourceMappingURL=SignatureAgreement.css.map */

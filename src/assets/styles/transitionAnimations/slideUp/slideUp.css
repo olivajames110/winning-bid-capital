@@ -1,0 +1,41 @@
+.slide-up-enter {
+  -webkit-transform: translateY(200%);
+          transform: translateY(200%);
+  width: 100%;
+  -webkit-transition: -webkit-transform 400ms;
+  transition: -webkit-transform 400ms;
+  transition: transform 400ms;
+  transition: transform 400ms, -webkit-transform 400ms;
+  opacity: 1;
+}
+
+.slide-up-enter-active {
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+  width: 100%;
+  -webkit-transition: -webkit-transform 400ms;
+  transition: -webkit-transform 400ms;
+  transition: transform 400ms;
+  transition: transform 400ms, -webkit-transform 400ms;
+}
+
+.slide-up-exit {
+  position: absolute;
+  opacity: 1;
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+  width: 100%;
+}
+
+.slide-up-exit-active {
+  position: absolute;
+  opacity: 0;
+  -webkit-transform: translateY(200%);
+          transform: translateY(200%);
+  width: 100%;
+  -webkit-transition: -webkit-transform 400ms;
+  transition: -webkit-transform 400ms;
+  transition: transform 400ms;
+  transition: transform 400ms, -webkit-transform 400ms;
+}
+/*# sourceMappingURL=slideUp.css.map */

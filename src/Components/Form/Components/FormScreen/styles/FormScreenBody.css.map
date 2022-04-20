@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,+BAA+B,CAAC;EAC9B,OAAO,EAAE,MAAM;CAChB",
+    "sources": [
+        "FormScreenBody.scss"
+    ],
+    "names": [],
+    "file": "FormScreenBody.css"
+}

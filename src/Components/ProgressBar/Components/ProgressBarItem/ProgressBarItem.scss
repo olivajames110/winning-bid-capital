@@ -1,0 +1,30 @@
+// .progress-bar-item-container {
+//   position: relative;
+//   display: flex;
+//   align-items: center;
+//   z-index: 111;
+//   max-width: 240px;
+//   &:not(.last-child) {
+//     flex-grow: 1;
+//   }
+// }
+
+// @media only screen and (max-width: 600px) {
+//   .progress-bar-item-container {
+//     position: relative;
+//     display: flex;
+//     align-items: center;
+//     z-index: 111;
+//     max-width: 80px;
+//   }
+// }
+
+// @keyframes circleFill {
+//   from {
+//     width: 0;
+//   }
+
+//   to {
+//     width: 100%;
+//   }
+// }

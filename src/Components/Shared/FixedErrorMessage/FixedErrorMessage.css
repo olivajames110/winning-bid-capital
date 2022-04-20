@@ -1,0 +1,186 @@
+.fixed-error-message {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 20px 10px;
+  -webkit-box-shadow: 0 0 3px 3px rgba(50, 1, 1, 0.267);
+          box-shadow: 0 0 3px 3px rgba(50, 1, 1, 0.267);
+  z-index: 1111111111;
+}
+
+.fixed-error-message.valid {
+  background-color: #c9fbcbf0;
+  color: #333;
+  fill: #333;
+  -webkit-animation: fadeOut 1500ms;
+          animation: fadeOut 1500ms;
+  -webkit-animation-delay: 2500ms;
+          animation-delay: 2500ms;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 1;
+}
+
+.fixed-error-message.valid .valid-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.fixed-error-message.valid .valid-content .icon-wrapper {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  border-radius: 50px;
+  background-color: #04aa6d;
+  margin-right: 10px;
+}
+
+.fixed-error-message.valid .valid-content .icon-wrapper svg {
+  display: block;
+  height: 22px;
+  width: 22px;
+  fill: #fff;
+}
+
+.fixed-error-message.invalid {
+  background-color: #f23a3deb;
+  color: #ffffff;
+  fill: #ffffff;
+}
+
+.fixed-error-message.invalid .num-of-invalid {
+  color: #f23a3d;
+}
+
+.fixed-error-message .view-errors-btn {
+  margin-left: 6px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.fixed-error-message .fixed-error-message__header {
+  top: 0;
+  left: 0;
+  width: 100%;
+  position: absolute;
+}
+
+.fixed-error-message .fixed-error-message__header .cancel {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 45px;
+  height: 45px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: transparent;
+  z-index: 111;
+}
+
+.fixed-error-message .fixed-error-message__header .cancel svg {
+  cursor: pointer;
+  height: 28px;
+  color: inherit;
+}
+
+.fixed-error-message .fixed-error-message__content {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.fixed-error-message .fixed-error-message__content .num-of-invalid {
+  background-color: #fff;
+  padding: 0px 5px;
+  margin: 0 6px;
+  border-radius: 50px;
+  font-weight: bold;
+}
+
+.fixed-error-message .fixed-error-message__content h2 {
+  font-size: 28px;
+  line-height: 36px;
+}
+
+.fixed-error-message .fixed-error-message__content h2,
+.fixed-error-message .fixed-error-message__content h3 {
+  color: #333;
+  text-shadow: none;
+}
+
+.fixed-error-message .fixed-error-message__content p {
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.fade-in-enter {
+  opacity: 0;
+}
+
+.fade-in-enter-active {
+  opacity: 1;
+  -webkit-transition: opacity 300ms, -webkit-transform 300ms;
+  transition: opacity 300ms, -webkit-transform 300ms;
+  transition: opacity 300ms, transform 300ms;
+  transition: opacity 300ms, transform 300ms, -webkit-transform 300ms;
+}
+
+.fade-in-exit {
+  opacity: 1;
+}
+
+.fade-in-exit-active {
+  opacity: 0;
+  -webkit-transition: opacity 300ms, -webkit-transform 300ms;
+  transition: opacity 300ms, -webkit-transform 300ms;
+  transition: opacity 300ms, transform 300ms;
+  transition: opacity 300ms, transform 300ms, -webkit-transform 300ms;
+}
+
+@-webkit-keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@media only screen and (max-width: 965px) {
+  .fixed-error-message .fixed-error-message__header {
+    padding: 0.7em;
+  }
+  .fixed-error-message #preview__title {
+    font-size: 16px !important;
+    margin-bottom: 5px;
+  }
+  .fixed-error-message #preview__address {
+    font-size: 13px !important;
+  }
+}
+/*# sourceMappingURL=FixedErrorMessage.css.map */

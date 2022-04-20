@@ -1,0 +1,28 @@
+// .progress-bar-line-container {
+//   position: absolute;
+//   width: calc(100% - 36px);
+//   right: 0;
+//   display: flex;
+//   flex-grow: 1;
+//   height: 2px;
+//   border-top: 2px dashed var(--graySecondary);
+//   z-index: 1;
+
+//   .line-fill {
+//     position: absolute;
+//     left: 0;
+//     bottom: 0;
+//     height: 100%;
+//     width: 0%;
+//     transition: var(--progressBarAnimation);
+//     transition-timing-function: linear;
+//     background-color: var(--primary);
+//     border-top: 2px dashed var(--primary);
+//   }
+
+//   &.is-active {
+//     .line-fill {
+//       width: 100%;
+//     }
+//   }
+// }

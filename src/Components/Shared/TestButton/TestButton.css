@@ -1,0 +1,31 @@
+.test-button-container {
+  position: absolute;
+  top: 25px;
+  right: 35px;
+}
+
+.test-button-container button {
+  border-radius: 8px;
+  border: none;
+  padding: 1px 8px;
+  background-color: #2e46b3;
+  color: #fff;
+  line-height: 20px;
+  font-size: 11px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .test-button-container {
+    top: -10px;
+  }
+}
+/*# sourceMappingURL=TestButton.css.map */

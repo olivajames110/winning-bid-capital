@@ -1,0 +1,93 @@
+.image-upload-inner-wrapper {
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  width: 100%;
+  z-index: 111111;
+}
+
+.image-upload-inner-wrapper .image-upload-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  border-radius: 5px;
+  background-color: #eff7fe;
+  border: 3px dashed #a2cbf8;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-transition: 200ms;
+  transition: 200ms;
+  color: #1b70ca;
+}
+
+.image-upload-inner-wrapper .image-upload-box:hover {
+  background-color: #e3eef8;
+}
+
+.image-upload-inner-wrapper .image-upload-box .image-upload__title {
+  margin-top: 5px;
+  font-size: 12px;
+}
+
+.image-upload-inner-wrapper .image-upload-box svg {
+  height: 20px;
+}
+
+.image-upload-inner-wrapper .image-upload-box #image-upload {
+  display: none;
+}
+
+.image-upload-inner-wrapper .image-upload-preview {
+  position: relative;
+  border: 1px solid #d6d6d6;
+  width: 100px;
+  height: 100px;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+
+.image-upload-inner-wrapper .image-upload-preview #close-icon {
+  position: relative;
+  background-color: #fff;
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.image-upload-inner-wrapper .image-upload-preview #close-icon svg {
+  width: 24px;
+  height: 24px;
+}
+
+.image-upload-inner-wrapper .image-upload-preview img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+/*# sourceMappingURL=ImageUpload.css.map */

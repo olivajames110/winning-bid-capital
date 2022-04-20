@@ -1,0 +1,36 @@
+.form-input-outer-wrapper {
+  padding: 12px 0 0px;
+  width: 100%;
+}
+
+.form-input-outer-wrapper input,
+.form-input-outer-wrapper select,
+.form-input-outer-wrapper textarea,
+.form-input-outer-wrapper .MuiSelect-select {
+  font-size: 0.8rem;
+}
+
+.form-input-outer-wrapper .MuiInputLabel-root {
+  font-size: 0.8rem;
+  opacity: 0.65;
+}
+
+.form-input-outer-wrapper .MuiFormHelperText-root {
+  font-size: 0.67rem;
+}
+
+.form-input-outer-wrapper .helper-text {
+  color: rgba(0, 0, 0, 0.6);
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 1.66;
+  letter-spacing: 0.03333em;
+  text-align: left;
+  margin: 4px 14px 0px;
+}
+
+.MuiRadio-root {
+  z-index: 1111111;
+  padding: 5px !important;
+}
+/*# sourceMappingURL=FormInput.css.map */

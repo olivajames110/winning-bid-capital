@@ -1,0 +1,11 @@
+.form-outer-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 720px;
+}
+
+.form-outer-wrapper .form-screen-card-inner-wrapper {
+  max-width: 620px;
+  margin: 0 auto;
+}
+/*# sourceMappingURL=form.css.map */

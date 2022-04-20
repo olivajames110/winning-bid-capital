@@ -1,0 +1,33 @@
+$transitionTime: 400ms;
+//Slide Up
+
+.slide-up-enter {
+  // position: absolute;
+  transform: translateY(200%);
+  width: 100%;
+  transition: transform $transitionTime;
+  opacity: 1;
+}
+.slide-up-enter-active {
+  // position: absolute;
+  // top: 0;
+  transform: translateY(0%);
+  width: 100%;
+  // opacity: 1;
+  transition: transform $transitionTime;
+}
+.slide-up-exit {
+  position: absolute;
+  // top: 0;
+  opacity: 1;
+  transform: translateY(0%);
+  width: 100%;
+}
+.slide-up-exit-active {
+  position: absolute;
+  // top: 0;
+  opacity: 0;
+  transform: translateY(200%);
+  width: 100%;
+  transition: transform $transitionTime;
+}

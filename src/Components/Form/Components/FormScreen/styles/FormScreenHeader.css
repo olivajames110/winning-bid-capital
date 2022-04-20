@@ -1,0 +1,48 @@
+.form-screen-title-outer-wrapper {
+  position: relative;
+}
+
+.form-screen-title-outer-wrapper .logo-wrapper {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 50px;
+  padding-bottom: 40px;
+  cursor: pointer;
+}
+
+.form-screen-title-outer-wrapper .logo-wrapper svg,
+.form-screen-title-outer-wrapper .logo-wrapper img {
+  display: inline-block;
+  height: 64px;
+  -webkit-transition: 460ms;
+  transition: 460ms;
+}
+
+.form-screen-title-outer-wrapper .logo-wrapper::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background-color: var(--primary);
+  width: 60px;
+  height: 3px;
+}
+
+.form-screen-title-outer-wrapper .title-wrapper {
+  position: relative;
+  text-align: center;
+}
+
+.form-screen-title-outer-wrapper .title-wrapper h2 {
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: 1px;
+}
+/*# sourceMappingURL=FormScreenHeader.css.map */

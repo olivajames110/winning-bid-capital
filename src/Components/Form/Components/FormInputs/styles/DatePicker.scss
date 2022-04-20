@@ -1,0 +1,17 @@
+#date-picker {
+  &.error {
+    // background-color: red;
+    fieldset {
+      border-color: #d32f2f;
+    }
+    label {
+      color: #d32f2f;
+    }
+    .MuiSvgIcon-root {
+      color: #d32f2f;
+    }
+  }
+  .MuiSvgIcon-root {
+    font-size: 16px;
+  }
+}

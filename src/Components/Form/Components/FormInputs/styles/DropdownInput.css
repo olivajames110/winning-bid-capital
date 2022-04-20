@@ -1,0 +1,10 @@
+.MuiMenuItem-root {
+  font-size: 0.8rem !important;
+}
+
+.MuiPaper-root {
+  font-size: 0.8rem;
+  z-index: 11111111;
+  border-radius: 8px;
+}
+/*# sourceMappingURL=DropdownInput.css.map */

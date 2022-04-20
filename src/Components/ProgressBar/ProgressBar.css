@@ -1,0 +1,198 @@
+.progress-bar-container {
+  position: relative;
+  margin-top: 25px;
+  max-width: var(--pageMaxWidth);
+  width: 100%;
+  padding: 20px 15px 60px;
+  color: #ffff;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 640px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.progress-bar-container .progress-bar-item {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 111;
+  max-width: 240px;
+}
+
+.progress-bar-container .progress-bar-item:not(.last-child) {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.progress-bar-container .progress-bar-item .progress-bar-item__step {
+  position: relative;
+  color: var(--graySecondary);
+}
+
+.progress-bar-container .progress-bar-item .progress-bar-item__step .progress-bar-step__circle {
+  position: relative;
+  width: 36px;
+  height: 36px;
+  border: 2px solid var(--graySecondary);
+  background-color: #f8f8f8;
+  z-index: 11;
+  border-radius: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: calc(var(--progressBarAnimation) / 2);
+  transition: calc(var(--progressBarAnimation) / 2);
+}
+
+.progress-bar-container .progress-bar-item .progress-bar-item__step .progress-bar-step__circle .circle-number {
+  position: relative;
+  font-size: 13px;
+  font-weight: bold;
+  color: inherit;
+}
+
+.progress-bar-container .progress-bar-item .progress-bar-item__step .progress-bar-step__label {
+  color: inherit;
+  position: absolute;
+  font-size: 12px;
+  width: 88px;
+  left: 50%;
+  line-height: 1rem;
+  font-weight: bold;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  margin-top: 10px;
+}
+
+.progress-bar-container .progress-bar-item .progress-bar-item__step.is-active {
+  color: var(--primary);
+}
+
+.progress-bar-container .progress-bar-item .progress-bar-item__step.is-active .progress-bar-step__circle {
+  -webkit-transition-delay: var(--progressBarAnimationOffset);
+          transition-delay: var(--progressBarAnimationOffset);
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+.progress-bar-container .progress-bar-item .progress-bar-item__step.is-active .progress-bar-step__label {
+  -webkit-transition-delay: var(--progressBarAnimationOffset);
+          transition-delay: var(--progressBarAnimationOffset);
+  color: var(--primary);
+}
+
+.progress-bar-container .progress-bar-item .progress-bar-item__step.is-active svg {
+  fill: var(--primary);
+}
+
+.progress-bar-container .progress-bar-item .progress-bar-item__step.is-completed .progress-bar-step__circle {
+  background-color: var(--primary);
+  border-color: var(--primary);
+  color: #ffffff;
+}
+
+.progress-bar-container .progress-bar-item .progress-bar-item__step.is-completed .progress-bar-step__circle .icon-wrapper svg {
+  fill: #ffffff;
+}
+
+.progress-bar-container .progress-bar-item .progress-bar-item__step.is-completed .progress-bar-step__label {
+  color: var(--primary);
+}
+
+.progress-bar-container .progress-bar-item .progress-bar-item__line {
+  position: absolute;
+  width: calc(100% - 36px);
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  height: 2px;
+  border-top: 2px dashed var(--graySecondary);
+  z-index: 1;
+}
+
+.progress-bar-container .progress-bar-item .progress-bar-item__line .line-fill {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 100%;
+  width: 0%;
+  -webkit-transition: var(--progressBarAnimation);
+  transition: var(--progressBarAnimation);
+  -webkit-transition-timing-function: linear;
+          transition-timing-function: linear;
+  background-color: var(--primary);
+  border-top: 2px dashed var(--primary);
+}
+
+.progress-bar-container .progress-bar-item .progress-bar-item__line.is-active .line-fill {
+  width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+  .progress-bar-container .progress-bar-item .progress-bar-item__step .progress-bar-step__circle {
+    width: 36px;
+    height: 36px;
+  }
+  .progress-bar-container .progress-bar-item .progress-bar-item__step .progress-bar-step__circle .icon-wrapper svg {
+    height: 16px;
+  }
+  .progress-bar-container .progress-bar-item .progress-bar-item__step .progress-bar-step__label {
+    font-size: 9px;
+    width: 67px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .progress-bar-item {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    z-index: 111;
+    max-width: 80px;
+  }
+}
+
+@-webkit-keyframes circleFill {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes circleFill {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=ProgressBar.css.map */

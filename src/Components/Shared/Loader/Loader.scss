@@ -1,0 +1,38 @@
+.loader-wrapper {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 111;
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #00000061;
+    backdrop-filter: blur(5px);
+    // filter: blur(10px);
+    // -moz-filter: blur(10px);
+    // -webkit-filter: blur(10px);
+    // -o-filter: blur(10px);
+  }
+  svg {
+    z-index: 1111;
+  }
+  .loader-text {
+    color: #fff;
+    z-index: 111;
+    margin-bottom: 45px;
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: 1px 1px 8px #000000ad;
+  }
+}

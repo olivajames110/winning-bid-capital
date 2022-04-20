@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  background-color: #f2f7fa;
+  scroll-behavior: smooth;
+}
+
+div#root {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+:root {
+  --pageMaxWidth: 940px;
+  --lato: "Lato", sans-serif;
+  --roboto: "Roboto", sans-serif;
+  --script: "Meow Script", cursive;
+  --blue: #1976d2;
+  --primary: #4b7533;
+  --primaryHover: #42672d;
+  --secondary: #336699;
+  --gray: #616c70;
+  --red: #cc0000;
+  --graySecondary: #9ca8ac;
+  --progressBarAnimation: 210ms;
+  --progressBarAnimationOffset: calc(var(--progressBarAnimation) + 40ms);
+}
+
+button,
+body,
+p,
+input,
+textarea {
+  font-size: 15px;
+  line-height: 1.5rem;
+  font-family: var(--lato);
+}
+
+body,
+p {
+  color: #242526;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+h1 {
+  font-family: var(--roboto);
+  font-weight: 500;
+}
+
+h2 {
+  font-family: var(--roboto);
+  font-size: 22px;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+h3 {
+  font-family: var(--lato);
+  font-size: 18px;
+  font-weight: 400;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  padding: 6px 18px;
+  cursor: pointer;
+  -webkit-transition: 150ms;
+  transition: 150ms;
+  border-radius: 4px;
+}
+
+.primary-button {
+  background-color: var(--blue);
+  color: #ffffff;
+}
+
+.primary-button:hover {
+  background-color: var(--blueHover);
+}
+
+.ghost-button {
+  background-color: #ffffff;
+  color: var(--blue);
+  border: 1px solid var(--blue);
+}
+
+.ghost-button:hover {
+  background-color: #f4f7f8;
+}
+/*# sourceMappingURL=global.css.map */

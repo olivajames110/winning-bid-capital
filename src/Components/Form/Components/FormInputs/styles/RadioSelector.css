@@ -1,0 +1,32 @@
+.radio-selection-wrapper {
+  position: relative;
+  z-index: 11111;
+}
+
+.radio-selection-wrapper .MuiTypography-root {
+  font-size: 0.7rem;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.radio-selection-wrapper .radio-selector-items-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.radio-selection-wrapper .radio-selector-items-container .radio-selector-item-wrapper {
+  margin-left: 0;
+  margin-right: 0;
+  margin: 8px 15px 0;
+}
+
+.radio-selection-wrapper .radio-selector-items-container .radio-selector-item-wrapper .MuiFormControlLabel-root {
+  margin-left: 0;
+  margin-right: 0;
+}
+/*# sourceMappingURL=RadioSelector.css.map */

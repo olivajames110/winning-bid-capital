@@ -1,0 +1,31 @@
+.form-group-outer-wrapper {
+  position: relative;
+  padding: 10px 0;
+  margin: 5px 0;
+  z-index: 11;
+}
+
+.form-group-outer-wrapper.error:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 105%;
+  height: 100%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: #ff00000a;
+  z-index: 1;
+}
+
+.form-group-outer-wrapper.error .form-group__title {
+  color: #d32f2f;
+}
+
+.form-group-outer-wrapper .form-group__title {
+  font-weight: 600 !important;
+  color: #3f3c3c;
+  font-size: 13px;
+  line-height: 21px;
+}
+/*# sourceMappingURL=FormGroup.css.map */

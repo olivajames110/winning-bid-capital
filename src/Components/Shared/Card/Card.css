@@ -1,0 +1,10 @@
+.form-card {
+  background: #ffffff;
+  width: 100%;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1605);
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1605);
+  max-width: 720px;
+  padding: 60px 15px;
+}
+/*# sourceMappingURL=Card.css.map */
